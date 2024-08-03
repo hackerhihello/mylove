@@ -8,7 +8,7 @@ function showLove() {
 function handleNoClick() {
     noClickCount++;
     if (noClickCount >= 3) {
-        window.open('https://youtu.be/AF8m2I1lU2I?si=3PHCr-B4J3-S5HUP', '_blank');
+        window.open('https://youtube.com/shorts/isgqGERiyKg?si=AWQXpKB_W5oXozzC', '_blank');
     }
 }
 
