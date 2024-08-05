@@ -24,8 +24,8 @@ body {
 }
 
 .heart {
-    width: 356px;
-    height: 356px;
+    width: 256px;
+    height: 256px;
     background: url('https://cdn.iconscout.com/icon/free/png-512/free-heart-56-76703.png?f=webp&w=256') no-repeat center/cover;
     position: relative;
     margin: 50px auto;
@@ -85,10 +85,10 @@ body {
 }
 
 .popup-content {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     width: 80%;
     max-width: 500px;
     text-align: center;
@@ -96,6 +96,8 @@ body {
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.5s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 @keyframes slideIn {
@@ -167,12 +169,21 @@ body {
 
 .small-heart {
     display: inline-block;
-    width: 60px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     background: url('https://cdn.iconscout.com/icon/free/png-512/free-heart-56-76703.png?f=webp&w=256') no-repeat center/cover;
-    margin-left: 1px;
+    margin-left: 5px;
     vertical-align: middle;
     text-align: center;
-    line-height: 50px;
+    line-height: 20px;
     color: white;
+}
+
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
 }
